@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <div className="flex h-[500px] flex-col items-center justify-center">
-        <Image className="ml-[-50em]" style={{ position: "absolute" }} src={dev_foco} width={500} height={500} alt="garota dev focada" />
-        <div className="w-1/2 flex flex-col items-center justify-center">
+        <Image id="ImageBanner" className="ml-[-50em]" style={{ position: "absolute" }} src={dev_foco} width={500} height={500} alt="garoto dev focado" />
+        <div id="banner-infor" className="w-1/2 flex flex-col items-center justify-center">
           <div className="flex flex-row items-center justify-center m-2">
-            <h1 className="font-extrabold text-2xl text-slate-600 text-center">Rafael Silva</h1>
+            <h1 id="titleRafaelSilva" className="font-extrabold text-2xl text-slate-600 text-center">Rafael Silva</h1>
             {/* <div className="h-10 w-10 rounded-full shadow-md bg-indigo-300 ml-3"></div> */}
           </div>
           <p className="text-lg font-extralight">Desenvolvimento Mobile & Web</p>
@@ -50,7 +50,7 @@ export default function Home() {
           <h1>Desenvolvimento de Aplicativo</h1>
         </a>
 
-        <a href="/" style={{ cursor: "not-allowed", backgroundColor: "#999" }} className="justify-center flex flex-row items-center h-50 text-white w-80 m-4 rounded-md shadow-md p-5 animate-bounce">
+        <a href="#" style={{ cursor: "not-allowed", backgroundColor: "#999" }} className="justify-center flex flex-row items-center h-50 text-white w-80 m-4 rounded-md shadow-md p-5 animate-bounce">
           <p className="bg-orange-500 mb-14 mr-40 rounded-md shadow-md flex flex-row items-center- justify-center" style={{ width: "200px", position: "absolute", padding: 5 }}><InformationCircleIcon className="h-5 w-5" />Chegando Logo!</p>
           <PuzzlePieceIcon className="h-6 mr-5 w-6" />
           <h2>Desenvolvimento de Jogos</h2>

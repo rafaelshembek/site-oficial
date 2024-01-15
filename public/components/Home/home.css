@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* configurações para o tamanho maximo de telade 780px */
+@media screen and (max-width: 780px) {
+    img#ImageBanner {
+        visibility: hidden;
+    }
+
+    div#title-menu {
+        flex-direction: row;
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    div#banner-infor {
+        width: 100%;
+    }
+
+    nav ul#nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        background-color: #7F33DE;
+        box-shadow: 0px 60px 60px -50px #999;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul#nav-links.show {
+        display: flex;
+    }
+
+    div#burger-menu {
+        cursor: pointer;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 781px) {
+    div#burger-menu {
+        visibility: hidden;
+    }
+}
