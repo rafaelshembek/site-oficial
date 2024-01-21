@@ -22,16 +22,11 @@ export default function Inicial() {
                 </div>
                 <nav className="w-4/5">
                     <ul id="nav-links" className={`inline-flex float-right flex-wrap ${showNav ? 'show' : ''}`}>
-                        {/* <li><link href="">fasd</link></li> */}
                         <li><Link id="menu-link-home" className="flex flex-row items-center justify-center p-4 m-2 text-zinc-600" href="/"><HomeIcon className="h-4 w-4 mr-1" /> Home</Link></li>
-                        {/* <li><Link className="flex flex-row items-center justify-center p-4 m-2 text-zinc-500" href="/orcamento"><Cog6ToothIcon className="h-4 w-4 mr-1" />Orçamento</Link></li> */}
                         <li><Link id="menu-link-contact" className="flex flex-row items-center justify-center p-4 m-2 text-zinc-600" href="/contato" ><GlobeAmericasIcon className="h-4 w-4 mr-1" />Contato</Link></li>
-                        {/* <li><Link className="flex flex-row items-center justify-center p-4 m-2 text-zinc-500" href="/blog"><ChatBubbleLeftEllipsisIcon className="h-4 w-4 mr-1" />Blog</Link></li> */}
-                        {/* <li><Link className="flex flex-row items-center justify-center p-4 m-2 bg-green-400 rounded-md shadow-md text-white" href=""><CurrencyDollarIcon className="h-4 w-4" />Vamos Trocar Ideias!</Link></li> */}
                     </ul>
-
                 </nav>
-                <div id="burger-menu" onClick={toggleNav} className="flex flex-row items-center align-middle justify-center p-4 m-2 text-zinc-600"><Bars4Icon className="h-4 w-4 mr-1" /></div>
+                <div id="burger-menu" onClick={toggleNav} className="flex flex-row items-center align-middle justify-center p-4 m-2 text-zinc-600"><Bars4Icon className="h-6 w-6 mr-1" /></div>
             </div>
         </header>
     )
