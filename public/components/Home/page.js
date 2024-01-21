@@ -26,7 +26,7 @@ export default function Inicial() {
                         <li><Link id="menu-link-contact" className="flex flex-row items-center justify-center p-4 m-2 text-zinc-600" href="/contato" ><GlobeAmericasIcon className="h-4 w-4 mr-1" />Contato</Link></li>
                     </ul>
                 </nav>
-                <div id="burger-menu" onClick={toggleNav} className="flex flex-row items-center align-middle justify-center p-4 m-2 text-zinc-600"><Bars4Icon className="h-6 w-6 mr-1" /></div>
+                <div id="burger-menu" onClick={toggleNav} className="flex flex-row items-center align-middle justify-center p-4 m-2 text-zinc-600"><Bars4Icon className="h-3 w-3 mr-1" /></div>
             </div>
         </header>
     )

@@ -63,6 +63,9 @@ body {
     div#burger-menu {
         cursor: pointer;
         display: block;
+        background-color: #767676;
+        border-radius: 50%;
+        color: #fff;
     }
 
     /* estilos para informações iniciais da pagina*/
