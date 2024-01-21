@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* configurações para o tamanho maximo de telade 780px */
+
+/* stylo para o body iamgen de fundo */
+body {
+    background-image: url('../img_background_body.svg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+/* ================================== */
+
+/* configurações de estilo para dispositivos mobile tamanho de tela 780px */
 @media screen and (max-width: 780px) {
     img#ImageBanner {
         visibility: hidden;
     }
 
     div#title-menu {
+        /* estilização do title menu */
         flex-direction: row;
         margin-left: 50px;
         width: 100%;
@@ -19,14 +31,30 @@
     }
 
     nav ul#nav-links {
+        z-index: 1;
         display: none;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 64px;
-        background-color: #7F33DE;
-        box-shadow: 0px 60px 60px -50px #999;
+        background-color: rgba(0, 166, 178, 0.624);
+        /* box-shadow: 0px 60px 60px -50px #999; */
         left: 0;
         width: 100%;
+        height: 100%;
+    }
+
+    #menu-link-contact {
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    #menu-link-home {
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
     }
 
     nav ul#nav-links.show {
@@ -36,6 +64,29 @@
     div#burger-menu {
         cursor: pointer;
         display: block;
+    }
+
+    /* estilos para informações iniciais da pagina*/
+    h1#h1_info {
+        font-size: 20px;
+    }
+
+    /* stylo para a pagina de contato para tela de device */
+    section#page-contact {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    div img#img-page-contact {
+        height: 200px;
+    }
+
+    /* stylo para o body iamgen de fundo */
+    body {
+        background-image: none;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
     }
 }
 

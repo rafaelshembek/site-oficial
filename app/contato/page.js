@@ -29,9 +29,9 @@ export default function Page() {
     }
     return (
         <>
-            <section className="flex md:flex-row m-7">
+            <section id="page-contact" className="flex md:flex-row m-7">
                 <div className="w-full md:w-1/2 mb-4 flex justify-center items-center flex-col md:order-1">
-                    <Image src={contactImageSvg} width={300} height={300} alt="Informação de Contato" />
+                    <Image id="img-page-contact" src={contactImageSvg} width={300} height={300} alt="Informação de Contato" />
                 </div>
                 <div className="w-full md:order-2 md:w-1/2">
                     <div className="m-5 flex flex-row items-center text-zinc-600 text-3xl justify-start">

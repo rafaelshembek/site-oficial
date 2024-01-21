@@ -25,22 +25,22 @@ export default function Home() {
           </div>
           <p className="text-lg font-extralight">Desenvolvimento Mobile & Web</p>
           <div className="p-9 text-2xl text-center flex flex-row items-center justify-center text-slate-500">
-            <h1 className={roboto.className}>Transforme sua visão em realidade digital: desenvolvimento web feito sob medida para o sucesso do seu negócio</h1>
+            <h1 id="h1_info" className={roboto.className}>Transforme sua visão em realidade digital: desenvolvimento web feito sob medida para o sucesso do seu negócio</h1>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center">
+        <div id="imgs_tecnolog" className="flex flex-row items-center justify-center">
           <div className="m-5 flex flex-col items-center text-zinc-500 text-center justify-center">
-            <Image src={reactnative} width={30} height={30} alt="Logo React Native" />
+            <Image id="img_tecnolog" src={reactnative} width={30} height={30} alt="Logo React Native" />
           </div>
           <div className="m-5 flex flex-col items-center text-zinc-500 text-center justify-center">
-            <Image src={next} width={30} height={30} alt="Logo React Native" />
+            <Image id="img_tecnolog" src={next} width={30} height={30} alt="Logo React Native" />
           </div>
           <div className="m-5 flex flex-col items-center text-zinc-500 text-center justify-center">
-            <Image src={unity} width={30} height={30} alt="Logo React Native" />
+            <Image id="img_tecnolog" src={unity} width={30} height={30} alt="Logo React Native" />
           </div>
         </div>
       </div>
-      <section className="bg-white p-4 h-full flex flex-row flex-wrap items-center justify-center">
+      <section className="p-4 h-full flex flex-row flex-wrap items-center justify-center">
         <a href="#" className="bg-purple-400 flex flex-row justify-center items-center text-white h-50 m-4 w-80 rounded-md shadow-md p-5 animate-bounce">
           <GlobeAmericasIcon className="h-6 w-6 mr-1" />
           <h1>Desenvolvimento Web</h1>
