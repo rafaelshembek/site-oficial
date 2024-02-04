@@ -1,7 +1,7 @@
 import React, { } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function Email({ nome, email, tel }) {
+export default function Email({ nome, email, tel, message }) {
     const serviceID = 'service_s6ui355';
     const publicKey = 'LYabxatcKlcGRbTxQ';
     const templateId = 'template_mwe5jjs';
@@ -14,7 +14,7 @@ export default function Email({ nome, email, tel }) {
             to_name: nome,
             from_name: nome,
             to_email: 'rafaelsilvagomesreal@gmail.com',
-            message: `Meu nome é ${nome} estou entrando em contato para solicitar um projeto, meu email é: ${email} caso queira entra em contato meu telefone : ${tel}`
+            message: `Cliente: ${nome} Email Cliente: ${email}Telefone Cliente : ${tel} Mensagem Cliente: ${message}`
         })
     }
     sendEmail()
