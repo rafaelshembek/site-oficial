@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { use, useState } from "react";
+import { use, useRef, useState } from "react";
 
 import "./home.css";
 import { CodeBracketIcon, Bars4Icon, HomeIcon, GlobeAmericasIcon, PhoneIcon } from "@heroicons/react/24/solid";
@@ -8,10 +8,12 @@ import { CodeBracketIcon, Bars4Icon, HomeIcon, GlobeAmericasIcon, PhoneIcon } fr
 export default function Inicial() {
 
     const [showNav, setShowNav] = useState(false);
+    const [doneLink, setDoneLink] = useState(false)
+
     const toggleNav = () => {
         setShowNav(!showNav)
-    }
 
+    }
 
     return (
         <>
