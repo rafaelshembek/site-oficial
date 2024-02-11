@@ -1,5 +1,5 @@
 "use client"
-import { EnvelopeIcon, ChatBubbleBottomCenterIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, ChatBubbleBottomCenterIcon, AtSymbolIcon, PhoneIcon, UserIcon } from "@heroicons/react/24/solid";
 import { Roboto_Flex } from "next/font/google";
 import Image from "next/image";
 import contactImageSvg from "../../public/components/Home/undraw_contract_re_ves9.svg";
@@ -43,15 +43,15 @@ export default function Page() {
                 <div className="w-full md:order-2 md:w-1/2">
                     <form onSubmit={handleSubmit}>
                         <div className="m-3 p-5 text-zinc-600 text-sm flex flex-col">
-                            <label className={roboto.className}>Nome Completo</label>
+                            <label className={`flex justify-start mb-2 ${roboto.className}`}><UserIcon className="h-4 w-4 mr-2" /> Nome Completo</label>
                             <input className="p-2 rounded-md border outline-none" placeholder="Seu Nome Completo" required type="text" name="nome" />
                         </div>
                         <div className="m-3 p-5 text-zinc-600 text-sm flex flex-col">
-                            <label className={roboto.className}>Email</label>
+                            <label className={`flex justify-start mb-2 ${roboto.className}`}><AtSymbolIcon className="h-4 w-4 mr-2" /> Email</label>
                             <input className="p-2 rounded-md border outline-none" placeholder="Seu Email" required type="email" name="email" />
                         </div>
                         <div className="m-3 p-5 text-zinc-600 text-sm flex flex-col">
-                            <label className={roboto.className}>Telefone</label>
+                            <label className={`flex justify-start mb-2 ${roboto.className}`}><PhoneIcon className="h-4 w-4 mr-2" /> Telefone</label>
                             <input className="p-2 rounded-md border outline-none" placeholder="Seu Telefone" required type="tel" name="tel" />
                         </div>
                         <div className="m-3 p-5 text-zinc-600 text-sm flex flex-col">
