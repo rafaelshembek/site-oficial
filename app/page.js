@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       <section className="p-4 h-full flex flex-row flex-wrap items-center justify-center">
-        <a href="#" className="bg-green-400 flex flex-row justify-center items-center text-white h-50 m-4 w-80 rounded-md shadow-md p-5 animate-bounce">
+        <a href="/Vitrine" className="bg-green-400 flex flex-row justify-center items-center text-white h-50 m-4 w-80 rounded-md shadow-md p-5 animate-bounce">
           <Tooltip Icon_Name={BellIcon} styles_css={{ display: showInfor, position: "absolute", zIndex: 1, left: "-1em", top: "-3em", transition: "ease-in 0.2s", boxShadow: "1px 1px 5em 3px #49DB9C" }} tooltip_name={"Temos novidades"} Style_elemento_icon={"h-5 w-5 mr-2"} Style_elemento_two={"flex items-center"} Style_elemento_one={"bg-green-300 text-green-600 p-4 rounded-md"} />
           <GlobeAmericasIcon className="h-6 w-6 mr-1" />
           <h1>Desenvolvimento Web</h1>
