@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from "react";
 
 const TypingEffect = ({ text, typingSpeed, id }) => {
@@ -24,18 +25,6 @@ const TypingEffect = ({ text, typingSpeed, id }) => {
             }
         }
         type();
-        // let currentIndex = 0;
-        // let timeout;
-        // const interval = setTimeout(() => {
-        //     if (currentIndex <= text.length) {
-        //         setDisplayText(text.substring(0, currentIndex));
-        //         currentIndex++;
-        //     } else {
-        //         clearTimeout(interval);
-        //         type()
-        //     }
-        // }, typingSpeed);
-        // type();
         return () => clearTimeout(timeout);
     }, [text, typingSpeed]);
 
