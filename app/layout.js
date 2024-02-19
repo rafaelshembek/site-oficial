@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import './style.css'
 // import '../public/components/Home/home.css'
 import Inicial from "../public/components/Home/page";
 import Footer from "../public/components/Footer/page";
